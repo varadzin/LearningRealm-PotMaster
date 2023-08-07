@@ -14,8 +14,10 @@
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
 		291957A72A7EC61600A6A31D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 291957A62A7EC61600A6A31D /* Realm */; };
 		291957A92A7EC61600A6A31D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 291957A82A7EC61600A6A31D /* RealmSwift */; };
-		8496FA8727D71671009562D6 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496FA8627D71671009562D6 /* Ingredient.swift */; };
-		8496FA8927D71685009562D6 /* IngredientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496FA8827D71685009562D6 /* IngredientMock.swift */; };
+		29AA16482A8184960010B206 /* ColorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA16442A8184960010B206 /* ColorOptions.swift */; };
+		29AA16492A8184960010B206 /* RealmMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA16452A8184960010B206 /* RealmMigrator.swift */; };
+		29AA164A2A8184960010B206 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA16462A8184960010B206 /* Ingredient.swift */; };
+		29AA164B2A8184960010B206 /* IngredientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA16472A8184960010B206 /* IngredientMock.swift */; };
 		8496FA8E27D717F1009562D6 /* IngredientFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496FA8D27D717F1009562D6 /* IngredientFormView.swift */; };
 		8496FA9027D718A9009562D6 /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496FA8F27D718A9009562D6 /* IngredientRow.swift */; };
 		8496FA9227D7195F009562D6 /* IngredientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496FA9127D7195F009562D6 /* IngredientListView.swift */; };
@@ -29,8 +31,10 @@
 		18D775C922AD944400AE281E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8496FA8627D71671009562D6 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		8496FA8827D71685009562D6 /* IngredientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientMock.swift; sourceTree = "<group>"; };
+		29AA16442A8184960010B206 /* ColorOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorOptions.swift; sourceTree = "<group>"; };
+		29AA16452A8184960010B206 /* RealmMigrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMigrator.swift; sourceTree = "<group>"; };
+		29AA16462A8184960010B206 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ingredient.swift; path = ../../../../../Downloads/PotionsMaster/final/PotionsMaster/Models/Ingredient.swift; sourceTree = "<group>"; };
+		29AA16472A8184960010B206 /* IngredientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientMock.swift; path = ../../../../../Downloads/PotionsMaster/final/PotionsMaster/Models/IngredientMock.swift; sourceTree = "<group>"; };
 		8496FA8D27D717F1009562D6 /* IngredientFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientFormView.swift; sourceTree = "<group>"; };
 		8496FA8F27D718A9009562D6 /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 		8496FA9127D7195F009562D6 /* IngredientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListView.swift; sourceTree = "<group>"; };
@@ -93,8 +97,10 @@
 		8496FA7E27D715D1009562D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8496FA8627D71671009562D6 /* Ingredient.swift */,
-				8496FA8827D71685009562D6 /* IngredientMock.swift */,
+				29AA16442A8184960010B206 /* ColorOptions.swift */,
+				29AA16462A8184960010B206 /* Ingredient.swift */,
+				29AA16472A8184960010B206 /* IngredientMock.swift */,
+				29AA16452A8184960010B206 /* RealmMigrator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,11 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8496FA8727D71671009562D6 /* Ingredient.swift in Sources */,
+				29AA16482A8184960010B206 /* ColorOptions.swift in Sources */,
+				29AA164A2A8184960010B206 /* Ingredient.swift in Sources */,
+				29AA16492A8184960010B206 /* RealmMigrator.swift in Sources */,
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
 				8496FA8E27D717F1009562D6 /* IngredientFormView.swift in Sources */,
 				1839F4B025190F2A00BB00F1 /* AppMain.swift in Sources */,
-				8496FA8927D71685009562D6 /* IngredientMock.swift in Sources */,
+				29AA164B2A8184960010B206 /* IngredientMock.swift in Sources */,
 				8496FA9027D718A9009562D6 /* IngredientRow.swift in Sources */,
 				8496FA9227D7195F009562D6 /* IngredientListView.swift in Sources */,
 			);

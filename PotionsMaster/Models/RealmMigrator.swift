@@ -31,16 +31,20 @@
 /// THE SOFTWARE.
 
 import RealmSwift
-import SwiftUI
 
-class Ingredient: Object, ObjectKeyIdentifiable {
-  
-  
-  // This key you always need to save data with REALM
-  @Persisted(primaryKey: true) var id: ObjectId
-  
-  @Persisted var title = ""
-  @Persisted var notes = ""
-  @Persisted var quantity = 1
-  @Persisted var bought = false
+enum RealmMigrator {
+  static private func migrationBlock(
+    migration: Migration,
+    oldSchemaVersion: UInt64
+  ) {
+    if oldSchemaVersion < 1 {
+      migration.enumerateObjects(ofType: Ingredient.className()) { _, newObject in
+        newObject?["colorOption"] = ColorOptions.green
+      }
+    }
+  }
+
+  static var configuration: Realm.Configuration {
+    Realm.Configuration(schemaVersion: 1, migrationBlock: migrationBlock)
+  }
 }
