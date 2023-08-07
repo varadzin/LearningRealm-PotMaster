@@ -34,7 +34,11 @@ import RealmSwift
 import SwiftUI
 
 class Ingredient: Object, ObjectKeyIdentifiable {
+  
+  
+  // This key you always need to save data with REALM
   @Persisted(primaryKey: true) var id: ObjectId
+  
   @Persisted var title = ""
   @Persisted var notes = ""
   @Persisted var quantity = 1
